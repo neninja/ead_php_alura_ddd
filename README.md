@@ -69,3 +69,4 @@ São separados para permitir independência de crescimento, baixo acoplamento e 
 - https://github.com/dddinphp/last-wishes
 - https://martinfowler.com/bliki/BoundedContext.html
 - http://www.fabriciorissetto.com/blog/ddd-bounded-context/
+- https://leanpub.com/ddd-in-php
