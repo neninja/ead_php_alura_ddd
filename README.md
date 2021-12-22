@@ -2,15 +2,27 @@
 
 > Projeto referente a [este](https://cursos.alura.com.br/course/domain-driven-design-php) curso.
 
-## Requisitos
-
-- PHP 7.4
-
-## Setup inicial
+## Setup
 
 ```sh
+docker-compose up -d
 docker-compose exec app composer i
 ```
+
+Nas próximas inicializações de ambiente não é necessário instalar as dependências do composer, reduzindo o comando para:
+
+```sh
+docker-compose up -d
+```
+
+>  Caso modifique o `Dockerfile` em algum momento, utilize ``docker-compose up -d --build``
+
+O ambiente pode ser finalizado com:
+
+```sh
+docker-compose up down
+```
+
 
 ## Execução
 
