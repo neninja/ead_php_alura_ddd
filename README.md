@@ -9,13 +9,17 @@
 ## Setup inicial
 
 ```sh
-composer i
+docker-compose exec app composer i
 ```
 
-## Execução dos testes
+## Execução
 
 ```sh
-php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com"
+docker-compose exec app composer test
+```
+
+```sh
+docker-compose exec app php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com"
 ```
 
 ## Resumos sobre o curso
