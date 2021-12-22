@@ -20,6 +20,8 @@ php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com"
 
 ## Resumos sobre o curso
 
+- DTO deve utilizar tipos simples, nada do domínio
+
 ### Sobre DDD
 
 - Possui padrões táticos (código) e estratégicos (comunicação)
@@ -60,9 +62,10 @@ Situação em que algo notifica algum interessado no domínio (e.g. aluno matric
 São separados para permitir independência de crescimento, baixo acoplamento e maior facilidade de manutenção. Quando contextos diferentes exigem uma mesma dependência ela fica pode:
 
 1. ser duplicada - mais prático porém afeta a manutenção futura da base
-2. criar um contexto compartilhado para servir ambos - mais flexibilidade, porém aumenta a complexidade
+2. criar um contexto compartilhado (Shared Kernel) para servir ambos - mais flexibilidade, porém aumenta a complexidade
 
 ## Links úteis
 
 - https://github.com/dddinphp/last-wishes
 - https://martinfowler.com/bliki/BoundedContext.html
+- http://www.fabriciorissetto.com/blog/ddd-bounded-context/

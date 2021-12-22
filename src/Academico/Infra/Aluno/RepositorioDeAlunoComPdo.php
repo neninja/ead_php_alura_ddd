@@ -6,7 +6,7 @@ use Alura\Arquitetura\Academico\Dominio\Aluno\Aluno;
 use Alura\Arquitetura\Academico\Dominio\Aluno\AlunoNaoEncontrado;
 use Alura\Arquitetura\Academico\Dominio\Aluno\RepositorioDeAluno;
 use Alura\Arquitetura\Academico\Dominio\Aluno\Telefone;
-use Alura\Arquitetura\Academico\Dominio\Cpf;
+use Alura\Arquitetura\Shared\Dominio\Cpf;
 
 class RepositorioDeAlunoComPdo implements RepositorioDeAluno
 {
