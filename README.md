@@ -34,6 +34,13 @@ composer test
     - Infrastructure Service: Regras que dependem de detalhes de infra
     - Application Service: Organização do fluxo da aplicação (casos de uso), podem ser entendidos como as Controllers do MVC
 
+- Invariância: Regra de negócio que deve sempre ser verdadeira para os objetos serem válidos
+- Aggregate: Relacionamento entre objetos onde um possui os outros, cujo são instanciados/controlados por ele (e.g. telefone é instanciado dentro de um método em aluno)
+    - Aggregate root: Controlador dos objetos (o aluno entre aluno e telefone)
+    - Sobre persistir aggregates: No exemplo de aluno com telefone, telefone **não** teria um repositório próprio. Suas operações seriam no repositório de seu aggregate root (aluno)
+    - Quando vamos relacionar 2 aggregates, não devemos ter a instância deles se relacionando, mas sim apenas as suas identidades. Nesta discussão aqui no fórum esse ponto foi levantado: https://cursos.alura.com.br/forum/topico-referencias-em-agregados-149004
+    - https://www.youtube.com/watch?v=1AEOcQWQR2o
+
 ### Linguagem ubíqua
 
 Linguagem compartilhada entre equipe especialistas de domínio e especialistas técnicos (devs). O ideal é codar (e.g. nome de classes, props, métodos) utilizando os mesmos termos dos especialistas de domínio.
