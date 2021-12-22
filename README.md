@@ -41,6 +41,10 @@ php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com"
     - Quando vamos relacionar 2 aggregates, não devemos ter a instância deles se relacionando, mas sim apenas as suas identidades. Nesta discussão aqui no fórum esse ponto foi levantado: https://cursos.alura.com.br/forum/topico-referencias-em-agregados-149004
     - https://www.youtube.com/watch?v=1AEOcQWQR2o
 
+### Linguagem ubíqua
+
+Linguagem compartilhada entre equipe especialistas de domínio e especialistas técnicos (devs). O ideal é codar (e.g. nome de classes, props, métodos) utilizando os mesmos termos dos especialistas de domínio.
+
 ### Evento de domínio
 
 Situação em que algo notifica algum interessado no domínio (e.g. aluno matriculado)
@@ -51,10 +55,14 @@ Situação em que algo notifica algum interessado no domínio (e.g. aluno matric
 
 - Comumente as applications services receberão o publicador de evento como parâmetro por injeção de dependência
 
-### Linguagem ubíqua
+### Bounded Contexts
 
-Linguagem compartilhada entre equipe especialistas de domínio e especialistas técnicos (devs). O ideal é codar (e.g. nome de classes, props, métodos) utilizando os mesmos termos dos especialistas de domínio.
+São separados para permitir independência de crescimento, baixo acoplamento e maior facilidade de manutenção. Quando contextos diferentes exigem uma mesma dependência ela fica pode:
+
+1. ser duplicada - mais prático porém afeta a manutenção futura da base
+2. criar um contexto compartilhado para servir ambos - mais flexibilidade, porém aumenta a complexidade
 
 ## Links úteis
 
 - https://github.com/dddinphp/last-wishes
+- https://martinfowler.com/bliki/BoundedContext.html
