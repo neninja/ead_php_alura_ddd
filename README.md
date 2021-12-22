@@ -19,7 +19,7 @@ docker-compose exec app composer test
 ```
 
 ```sh
-docker-compose exec app php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com"
+docker-compose exec app php matricular-aluno.php "123.456.789-10" "John Doo" "email@example.com" "54" "999999999"
 ```
 
 ## Resumos sobre o curso
